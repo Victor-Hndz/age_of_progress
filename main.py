@@ -665,31 +665,31 @@ class Fabrica:
         if self.categoria < 5:
             cantidad = Coste_exp_categoria[self.categoria+1]["Coste_exp_m"]
             if "Muebles_cobre" in self.provincia.pais.recursos.keys():
-                if self.provincia.pais.recursos["Muebles_cobre"]<cantidad/1.66:
+                if self.provincia.pais.recursos["Muebles_cobre"]<math.ceil(cantidad/1.66):
                     cantidad = math.ceil(cantidad -self.provincia.pais.recursos["Muebles_cobre"]*1.66)
                     self.provincia.pais.recursos.pop("Muebles_cobre")
                 else:
-                    self.provincia.pais.recursos["Muebles_cobre"] = int(self.provincia.pais.recursos["Muebles_cobre"]-(cantidad/1.66))
+                    self.provincia.pais.recursos["Muebles_cobre"] = self.provincia.pais.recursos["Muebles_cobre"]-math.ceil((cantidad/1.66))
                     if self.provincia.pais.recursos["Muebles_cobre"] <= 0:
                         self.provincia.pais.recursos.pop("Muebles_cobre")
                     self.categoria = self.categoria+1
                     return 1
             if "Muebles_hierro" in self.provincia.pais.recursos.keys():
-                if self.provincia.pais.recursos["Muebles_hierro"]<cantidad/1.66:
+                if self.provincia.pais.recursos["Muebles_hierro"]<math.ceil(cantidad/1.66):
                     cantidad = math.ceil(cantidad -self.provincia.pais.recursos["Muebles_hierro"]*1.66)
                     self.provincia.pais.recursos.pop("Muebles_hierro")
                 else:
-                    self.provincia.pais.recursos["Muebles_hierro"] = int(self.provincia.pais.recursos["Muebles_hierro"]-(cantidad/1.66))
+                    self.provincia.pais.recursos["Muebles_hierro"] = self.provincia.pais.recursos["Muebles_hierro"]-math.ceil((cantidad/1.66))
                     if self.provincia.pais.recursos["Muebles_hierro"] <= 0:
                         self.provincia.pais.recursos.pop("Muebles_hierro")
                     self.categoria = self.categoria+1
                     return 1
             if "Muebles_madera" in self.provincia.pais.recursos.keys():
-                if self.provincia.pais.recursos["Muebles_madera"]<cantidad/1.66:
-                    cantidad = math.ceil(cantidad -self.provincia.pais.recursos["Muebles_madera"])
+                if self.provincia.pais.recursos["Muebles_madera"]<cantidad:
+                    cantidad = cantidad -self.provincia.pais.recursos["Muebles_madera"]
                     self.provincia.pais.recursos.pop("Muebles_madera")
                 else:
-                    self.provincia.pais.recursos["Muebles_madera"] = int(self.provincia.pais.recursos["Muebles_madera"]-cantidad)
+                    self.provincia.pais.recursos["Muebles_madera"] = self.provincia.pais.recursos["Muebles_madera"]-cantidad
                     if self.provincia.pais.recursos["Muebles_madera"] <= 0:
                         self.provincia.pais.recursos.pop("Muebles_madera")
                     self.categoria = self.categoria+1
