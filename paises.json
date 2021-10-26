@@ -1,0 +1,112 @@
+{
+    "Derya": {
+        "fabricas": [
+            {
+                "categoria": 1,
+                "nombre": "Fabrica",
+                "prioridad": 1,
+                "provincia": "001",
+                "tipo": "Madera"
+            }
+        ],
+        "infra": 3,
+        "mercado": {
+            "Acero": 217,
+            "Alimentos": 14,
+            "Alimentos_lux": 95,
+            "Alimentos_proc": 32,
+            "Bronce": 45,
+            "Carbon": 23,
+            "Cobre": 39,
+            "Combustible": 53,
+            "Combustible_veg": 33,
+            "Hierro": 29,
+            "Hierro_proc": 24,
+            "Madera": 15,
+            "Muebles_cobre": 19,
+            "Muebles_hierro": 36,
+            "Muebles_madera": 29,
+            "Procesador": 412,
+            "Radio": 129,
+            "TTRR": 26,
+            "TTRR_proc": 112,
+            "Vias": 132,
+            "sui": 0
+        },
+        "nombre": "Derya",
+        "recursos": {
+            "madera": 1000
+        },
+        "unidades": [
+            {
+                "ID": "tropa",
+                "numero": 1000,
+                "provincia": "001"
+            }
+        ]
+    },
+    "Dredia": {
+        "fabricas": [],
+        "infra": 3,
+        "mercado": {
+            "Acero": 90,
+            "Alimentos": 12,
+            "Alimentos_lux": 26,
+            "Alimentos_proc": 35,
+            "Bronce": 59,
+            "Carbon": 31,
+            "Cobre": 20,
+            "Combustible": 21,
+            "Combustible_veg": 57,
+            "Hierro": 28,
+            "Hierro_proc": 52,
+            "Madera": 12,
+            "Muebles_cobre": 41,
+            "Muebles_hierro": 33,
+            "Muebles_madera": 20,
+            "Procesador": 510,
+            "Radio": 217,
+            "TTRR": 18,
+            "TTRR_proc": 65,
+            "Vias": 103,
+            "sui": 0
+        },
+        "nombre": "Dredia",
+        "recursos": {
+            "madera": 1000
+        },
+        "unidades": []
+    },
+    "Kanatistan": {
+        "fabricas": [],
+        "infra": 3,
+        "mercado": {
+            "Acero": 190,
+            "Alimentos": 17,
+            "Alimentos_lux": 74,
+            "Alimentos_proc": 43,
+            "Bronce": 108,
+            "Carbon": 30,
+            "Cobre": 26,
+            "Combustible": 46,
+            "Combustible_veg": 48,
+            "Hierro": 24,
+            "Hierro_proc": 41,
+            "Madera": 16,
+            "Muebles_cobre": 45,
+            "Muebles_hierro": 26,
+            "Muebles_madera": 33,
+            "Procesador": 408,
+            "Radio": 159,
+            "TTRR": 19,
+            "TTRR_proc": 101,
+            "Vias": 136,
+            "sui": 0
+        },
+        "nombre": "Kanatistan",
+        "recursos": {
+            "madera": 1000
+        },
+        "unidades": []
+    }
+}

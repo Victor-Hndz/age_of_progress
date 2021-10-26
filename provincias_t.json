@@ -1,0 +1,17 @@
+{
+    "001": {
+        "adyacentes": [],
+        "clima": "mediterraneo",
+        "control": true,
+        "desarrollo": 1,
+        "nombre": "Novelda",
+        "pais": "Derya",
+        "prioridad": 1,
+        "recurso": 0,
+        "revueltas": {
+            "alta": 1,
+            "baja": 1,
+            "media": 1
+        }
+    }
+}
