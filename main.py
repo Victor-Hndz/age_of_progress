@@ -835,5 +835,5 @@ lectura_datos()
 for i in paises.keys():
     paises[i].mercado.act_precios()
 guardar_datos()
-
+print("hola desde motor")
 print("fin")
